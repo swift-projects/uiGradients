@@ -15,6 +15,7 @@
 		6DFBD7F11AC2045100721F5B /* GradientsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBD7F01AC2045100721F5B /* GradientsLayout.swift */; };
 		6DFBD7F31AC2058400721F5B /* gradients.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBD7F21AC2058400721F5B /* gradients.json */; };
 		6DFBD7F51AC2059700721F5B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBD7F41AC2059700721F5B /* Gradient.swift */; };
+		6DFBD7F91AC20E7D00721F5B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBD7F81AC20E7D00721F5B /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6DFBD7F01AC2045100721F5B /* GradientsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientsLayout.swift; sourceTree = "<group>"; };
 		6DFBD7F21AC2058400721F5B /* gradients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gradients.json; sourceTree = "<group>"; };
 		6DFBD7F41AC2059700721F5B /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		6DFBD7F81AC20E7D00721F5B /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		6DFBD7C91AC2037500721F5B /* uiGradients */ = {
 			isa = PBXGroup;
 			children = (
+				6DFBD7F81AC20E7D00721F5B /* UIColorExtensions.swift */,
 				6DFBD7CC1AC2037500721F5B /* AppDelegate.swift */,
 				6DFBD7EC1AC2042300721F5B /* GradientsViewController.swift */,
 				6DFBD7EE1AC2043900721F5B /* GradientCell.swift */,
@@ -220,6 +223,7 @@
 				6DFBD7F51AC2059700721F5B /* Gradient.swift in Sources */,
 				6DFBD7ED1AC2042300721F5B /* GradientsViewController.swift in Sources */,
 				6DFBD7EF1AC2043900721F5B /* GradientCell.swift in Sources */,
+				6DFBD7F91AC20E7D00721F5B /* UIColorExtensions.swift in Sources */,
 				6DFBD7CD1AC2037500721F5B /* AppDelegate.swift in Sources */,
 				6DFBD7F11AC2045100721F5B /* GradientsLayout.swift in Sources */,
 			);
@@ -398,6 +402,7 @@
 				6DFBD7E81AC2037500721F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DFBD7E91AC2037500721F5B /* Build configuration list for PBXNativeTarget "uiGradientsTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +411,7 @@
 				6DFBD7EB1AC2037500721F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

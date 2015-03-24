@@ -12,7 +12,7 @@ class GradientCell: UICollectionViewCell {
     
     var gradient: Gradient! {
         didSet {
-            render()
+            setNeedsDisplay()
         }
     }
     
@@ -47,8 +47,16 @@ class GradientCell: UICollectionViewCell {
         addConstraints(constraints)
     }
     
-    func render() {
+    
+    override func drawRect(rect: CGRect) {
         name.text = gradient.name
+        
+        let context = UIGraphicsGetCurrentContext()
+        let startPoint = bounds.origin
+        let endPoint = CGPoint(x: bounds.maxX, y: bounds.maxY)
+        let options = CGGradientDrawingOptions()
+        
+        CGContextDrawLinearGradient(context, gradient.gradient, startPoint, endPoint, options)
     }
     
 }

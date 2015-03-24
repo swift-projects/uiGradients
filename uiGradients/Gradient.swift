@@ -7,11 +7,25 @@
 //
 
 import Foundation
+import UIKit
 
 class Gradient {
     let name: String
     let colour1: String
     let colour2: String
+    
+    lazy var gradient: CGGradient = {
+        let space: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
+        
+        let colors: CFArray = [
+            UIColor(hex: self.colour1).CGColor,
+            UIColor(hex: self.colour2).CGColor
+        ]
+        
+        let locations: [CGFloat] = [0, 1]
+        
+        return CGGradientCreateWithColors(space, colors, locations)
+    }()
     
     class func all() -> [Gradient] {
         let path = NSBundle.mainBundle().pathForResource("gradients", ofType: "json")!
